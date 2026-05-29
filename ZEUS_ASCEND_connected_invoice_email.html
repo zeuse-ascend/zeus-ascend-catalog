@@ -314,7 +314,7 @@ async function generateInvoice(){
  const canvas = await html2canvas(invoiceCard, { backgroundColor:"#ffffff", scale:2 });
  const imageURL = canvas.toDataURL("image/png");
 
- if(!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL.includes("https://script.google.com/macros/s/AKfycbzjHhE2eQx43j0sbvN9w5DS9MdcMALoFv-D_jbsF0naUiU0yBJvXRfAIXUQ3WoszGdv/exec")){
+ if(!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL.includes("PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE")){
    alert("Email sender is not connected yet. Paste your Google Apps Script Web App URL into GOOGLE_SCRIPT_URL in this HTML file.");
    return;
  }
